@@ -1009,13 +1009,6 @@
       }
     }
   }
-  .hover\:bg-white {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-white);
-      }
-    }
-  }
   .hover\:bg-white\/10 {
     &:hover {
       @media (hover: hover) {
