@@ -9,24 +9,41 @@
 </head>
 <body class="bg-slate-900 text-white">
 
-    <!-- NAVBAR -->
-    <div class="bg-slate-800 shadow flex items-center justify-between px-5 py-3">
-        <a c href="INDEX.HTML" class="italic font-semibold text-lg text-blue-200">ミ★ 𝘊𝘏𝘌𝘐𝘋𝘐 ★彡</a>
+   <!-- NAVBAR -->
+<div class="bg-slate-800 shadow px-4 py-3">
+    <div class="flex items-center justify-between">
+        <a href="INDEX.HTML" class="italic font-semibold text-lg text-blue-200">ミ★ 𝘊𝘏𝘌𝘐𝘋𝘐 ★彡</a>
 
-        <nav class="flex items-center bg-slate-900 border border-white/10 rounded-full px-1.5 py-1 gap-0.5">
-
-            <!-- ACTIF (page courante) : bordure blanche --> 
-            <a href="./INDEX.HTML"   class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 transition-all duration-200 hover:bg-white/15 hover:text-white">ACCUEIL</a>
-            <!-- INACTIFS : transparents avec hover blanc -->
-            <a href="./APROPOS.HTML"       class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 transition-all duration-200 hover:bg-white/15 hover:text-white">À PROPOS</a> 
-            <a href="./PARCOUR.HTML"       class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 transition-all duration-200 hover:bg-white/15 hover:text-white">FORMATION</a>
-            <a href="./EXPERIENCE.HTML"    class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 transition-all duration-200 hover:bg-white/15 hover:text-white">EXPÉRIENCE</a>
-            <a href="./COMPETENCES.HTML"   class="px-4 py-1.5 rounded-full text-sm font-medium text-white ring-1 ring-white/30 transition-all duration-200 hover:bg-white/10">COMPÉTENCES</a>
-            <a href="./PROJET.HTML"        class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 transition-all duration-200 hover:bg-white/15 hover:text-white">PROJETS</a>
-            <a href="./CONTACTS.HTML"      class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 transition-all duration-200 hover:bg-white/15 hover:text-white">CONTACTS</a>
+        <!-- Desktop -->
+        <nav class="hidden md:flex items-center bg-slate-900 border border-white/10 rounded-full px-1.5 py-1 gap-0.5">
+            <a href="./INDEX.HTML"       class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 hover:bg-white/15 hover:text-white transition-all duration-200">ACCUEIL</a>
+            <a href="./APROPOS.HTML"     class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 hover:bg-white/15 hover:text-white transition-all duration-200">À PROPOS</a>
+            <a href="./PARCOUR.HTML"     class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 hover:bg-white/15 hover:text-white transition-all duration-200">FORMATION</a>
+            <a href="./EXPERIENCE.HTML"  class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 hover:bg-white/15 hover:text-white transition-all duration-200">EXPÉRIENCE</a>
+            <a href="./COMPETENCES.HTML" class="px-4 py-1.5 rounded-full text-sm font-medium text-white ring-1 hover:bg-white/15 hover:text-white transition-all duration-200">COMPÉTENCES</a>
+            <a href="./PROJET.HTML"      class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 hover:bg-white/15 hover:text-white transition-all duration-200">PROJETS</a>
+            <a href="./CONTACTS.HTML"    class="px-4 py-1.5 rounded-full text-sm font-medium text-white/55 ring-white/30 hover:bg-white/10 transition-all duration-200">CONTACTS</a>
         </nav>
-    </div>
 
+        <!-- Hamburger mobile (sans JS avec details/summary) -->
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer p-2 rounded-xl hover:bg-white/10 transition-all duration-200">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </summary>
+            <nav class="absolute right-0 top-12 bg-slate-800 border border-white/10 rounded-2xl p-2 flex flex-col gap-1 min-w-48 z-50 shadow-xl">
+                <a href="./INDEX.HTML"       class="px-4 py-2 rounded-xl text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-all duration-200">ACCUEIL</a>
+                <a href="./APROPOS.HTML"     class="px-4 py-2 rounded-xl text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-all duration-200">À PROPOS</a>
+                <a href="./PARCOUR.HTML"     class="px-4 py-2 rounded-xl text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-all duration-200">FORMATION</a>
+                <a href="./EXPERIENCE.HTML"  class="px-4 py-2 rounded-xl text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-all duration-200">EXPÉRIENCE</a>
+                <a href="./COMPETENCES.HTML" class="px-4 py-2 rounded-xl text-sm font-medium text-white/70 bg-white/10 hover:bg-white/10 hover:text-white transition-all duration-200">COMPÉTENCES</a>
+                <a href="./PROJET.HTML"      class="px-4 py-2 rounded-xl text-sm font-medium text-white/70 hover:bg-white/10 hover:text-white transition-all duration-200">PROJETS</a>
+                <a href="./CONTACTS.HTML"    class="px-4 py-2 rounded-xl text-sm font-medium text-white/70  transition-all duration-200">CONTACTS</a>
+            </nav>
+        </details>
+    </div>
+</div>
     <!-- CONTENU -->
 <main class="flex-1 flex flex-col items-center px-4 py-8 pb-20 overflow-y-auto">
 
