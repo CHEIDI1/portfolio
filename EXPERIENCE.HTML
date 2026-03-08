@@ -6,7 +6,7 @@
     <link href="output.css" rel="stylesheet">
     <title>Portfolio de Cheikh</title>
 </head>
-<body class="bg-slate-900 text-white">
+<body class="bg-slate-900 text-white overflow-hidden">
 
    <!-- NAVBAR -->
 <div class="bg-slate-800 shadow px-4 py-3">
@@ -43,19 +43,38 @@
         </details>
     </div>
 </div>
-    <!-- CONTENU -->
-    <div class="flex-1 flex flex-col items-center px-4 py-8 pb-20  ">
-       <div class="bg-slate-800 rounded-2xl p-5 flex-1 border border-white/5">
+  <!-- CONTENU -->
+<main class="flex-1 flex flex-col items-center px-4 py-8 pb-20 min-h-screen">
+
+    <h1 class="text-3xl sm:text-4xl font-black tracking-tight mb-10 text-center">
+        <span class="text-blue-400">EXPÉRIENCE</span>
+    </h1>
+
+    <div class="relative flex flex-col gap-8 w-full max-w-2xl">
+
+        <!-- Ligne verticale -->
+        <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-blue-400/30"></div>
+
+        <!-- Stage -->
+        <div class="flex gap-6 items-start">
+            <div class="z-10 w-10 h-10 rounded-full bg-blue-400/20 border-2 border-blue-400 flex items-center justify-center shrink-0">
+                <span class="text-blue-400 font-black text-xs">EXP</span>
+            </div>
+            <div class="bg-slate-800 rounded-2xl p-5 flex-1 border border-white/5">
                 <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-                    <h2 class="text-white font-bold text-lg"> STAGE </h2>
+                    <h2 class="text-white font-bold text-lg">Stage</h2>
                     <span class="text-blue-400 text-xs font-semibold bg-blue-400/10 px-3 py-1 rounded-full">2024 - 2025</span>
                 </div>
-                <p class="text-white  text-sm">TGI — Dakar</p>
+                <p class="text-white/50 text-sm">TGI — Dakar</p>
                 <p class="text-white/70 text-sm mt-3 leading-relaxed">
-                   Ce stage au sein de l’entreprise TGI a constitué une expérience professionnelle particulièrement enrichissante. Il m’a permis de découvrir concrètement le fonctionnement du monde du travail dans le domaine de l’informatique et d’appliquer les connaissances théoriques acquises en cours. J’ai pu développer de nouvelles compétences pratiques, notamment dans l’utilisation de WordPress pour la création et la gestion de sites web, ainsi que Photoshop pour la conception et la retouche d’éléments graphiques.
+                    Ce stage au sein de l’entreprise TGI a constitué une expérience professionnelle particulièrement enrichissante. Il m’a permis de découvrir concrètement le fonctionnement du monde du travail dans le domaine de l’informatique et d’appliquer les connaissances théoriques acquises en cours. J’ai pu développer de nouvelles compétences pratiques, notamment dans l’utilisation de WordPress pour la création et la gestion de sites web, ainsi que Photoshop pour la conception et la retouche d’éléments graphiques.
 Cette expérience a renforcé mon intérêt pour le domaine et m’a permis de consolider mes acquis tout en élargissant mes perspectives professionnelles.
 
+            </div>
+        </div>
+
     </div>
+</main>
 
     <!-- FOOTER -->
  <footer class="bg-slate-800 flex flex-col items-center justify-center fixed bottom-0 w-full py-1 gap-1">
